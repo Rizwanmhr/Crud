@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 const EditData = ({ setProgress }) => {
-  const [edit, setEdit] = useState();
+  const [edit, setEdit] = React.useState();
   const { id } = useParams();
   const navigate = useNavigate();
   console.log(id);
